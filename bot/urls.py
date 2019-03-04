@@ -19,5 +19,5 @@ from django.conf.urls import include, url
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^telbot/', include('telbot.urls')),
+    url(r'^', include('telbot.urls')),
 ]
