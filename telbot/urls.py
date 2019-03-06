@@ -1,7 +1,8 @@
 from django.urls import path
 from . import views
-
+from django.conf.urls import url
 urlpatterns=[
-	path('',views.get_man,name='index'),
-	path('get_man',views.get_man,name='man'),
+#	url('',views.get_man,name='index'),
+	url(r'\w*',views.index,name='index'),
+#	url('up',views.up,name='up'),
 ]
